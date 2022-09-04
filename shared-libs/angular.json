@@ -33,6 +33,37 @@
           }
         }
       }
+    },
+    "mik-basic-button": {
+      "projectType": "library",
+      "root": "projects/mik-basic-button",
+      "sourceRoot": "projects/mik-basic-button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mik-basic-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mik-basic-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mik-basic-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mik-basic-button/src/test.ts",
+            "tsConfig": "projects/mik-basic-button/tsconfig.spec.json",
+            "karmaConfig": "projects/mik-basic-button/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }

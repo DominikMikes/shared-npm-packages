@@ -10,6 +10,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
+      "mik-basic-button": [
+        "dist/mik-basic-button"
+      ],
       "mik-basic-list": [
         "dist/mik-basic-list"
       ]
